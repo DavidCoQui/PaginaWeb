@@ -38,7 +38,19 @@
         </div>
     </nav>
 </header>
-<div class="container mt-5">
+<div class="container ml-7   mt-5">
+    <div class="opciones d-inline-block" >
+        <label for="temporadas">Select season:</label>
+  <select name="temporadas">
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2019">2018</option>
+    <option value="2017">2017</option>
+  </select>
+      </div>
+      <button type="button" class="btn btn-dark d-inline-block ml-3"onclick="getStandings()">Update Standings</button>
+</div>
+<div class="container mt-2 ">
     <table class="table table-striped">
         <thead class="thead-dark">
         <tr>
@@ -48,103 +60,7 @@
             <th scope="col">Ties</th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <th scope="row">Kansas City Chiefs</th>
-            <td>14</td>
-            <td>2</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Buffalo Bills</th>
-            <td>13</td>
-            <td>3</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Pittsburgh Steelers</th>
-            <td>12</td>
-            <td>4</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Tenessee Titans</th>
-            <td>11</td>
-            <td>5</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Baltimore Ravens</th>
-            <td>11</td>
-            <td>5</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Cleveland Browns</th>
-            <td>11</td>
-            <td>5</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Indianapolis Colts</th>
-            <td>11</td>
-            <td>5</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Miami Dolphins</th>
-            <td>10</td>
-            <td>6</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Las Vegas Raiders</th>
-            <td>8</td>
-            <td>8</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">New England Patriots</th>
-            <td>7</td>
-            <td>9</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Los Angeles Chargers</th>
-            <td>7</td>
-            <td>9</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Denver Broncos</th>
-            <td>5</td>
-            <td>11</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Cincinatti Bengals</th>
-            <td>4</td>
-            <td>11</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <th scope="row">Houston Texans</th>
-            <td>4</td>
-            <td>12</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">New York Jets</th>
-            <td>2</td>
-            <td>14</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <th scope="row">Jacksonville Jaguars</th>
-            <td>1</td>
-            <td>15</td>
-            <td>0</td>
-        </tr>
+        <tbody class="tabla">
         </tbody>
     </table>
 </div>
@@ -169,4 +85,5 @@
     </div>
 </footer>
 </body>
+<script src="teamgames.js">Perro</script>
 </html>
