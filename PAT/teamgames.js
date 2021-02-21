@@ -15,8 +15,9 @@ fetch(url, {
 .then(response =>setStandings(response.conferences));}
 
 function setStandings(conferences){
-  var lineas=[];
+  let i=0;
   conferences.forEach(conference => {
+    var lineas=[];
     conference.divisions.forEach(divisions=>{
       divisions.teams.forEach(team=>{
         
@@ -27,14 +28,15 @@ function setStandings(conferences){
         )
     }
       )
+      lineas.sort(function(a,b){
+        return a.wins-b.wins;
+       });
+       var html='';
+      lineas.forEach(objeto => {
+        html=html+objeto.code;
+       });
+       document.getElementsByTagName("tbody")[i].innerHTML=html;
+       i++;
   });
-  lineas.sort(function(a,b){
-   return a.wins-b.wins;
-  });
-  var html='';
- lineas.forEach(objeto => {
-   html=html+objeto.code;
-  });
-  document.getElementsByTagName("tbody")[0].innerHTML=html;
 
 }

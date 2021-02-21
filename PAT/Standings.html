@@ -38,19 +38,24 @@
         </div>
     </nav>
 </header>
-<div class="container ml-7   mt-5">
+<div class="container" style="margin-left: 35%; margin-top: 4%;">
     <div class="opciones d-inline-block" >
         <label for="temporadas">Select season:</label>
   <select name="temporadas">
-    <option value="2020">2020</option>
-    <option value="2019">2019</option>
-    <option value="2019">2018</option>
-    <option value="2017">2017</option>
+    <option value="2020">2020-2021</option>
+    <option value="2019">2019-2020</option>
+    <option value="2019">2018-2019</option>
+    <option value="2017">2017-2018</option>
+    <option value="2016">2016-2017</option>
+    <option value="2015">2015-2016</option>
+    <option value="2014">2014-2015</option>
   </select>
       </div>
       <button type="button" class="btn btn-dark d-inline-block ml-3"onclick="getStandings()">Update Standings</button>
 </div>
-<div class="container mt-2 ">
+<div class="container-fluid mt-5">
+    <div class="container" style="width: 45%;display: inline-block;">
+    <h1 style="margin-left: 40%; ">AFC</h1>
     <table class="table table-striped">
         <thead class="thead-dark">
         <tr>
@@ -63,6 +68,22 @@
         <tbody class="tabla">
         </tbody>
     </table>
+</div>
+  <div class="container" style="width: 45%; margin-left:5%; display: inline-block;">
+    <h1 style="margin-left: 40%;">NFC</h1>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Team</th>
+            <th scope="col">Wins</th>
+            <th scope="col">Losses</th>
+            <th scope="col">Ties</th>
+        </tr>
+        </thead>
+        <tbody class="tabla">
+        </tbody>
+    </table>
+</div>
 </div>
 <footer class="text-center text-lg-start mt-5" style="background-color: rgba(0, 0, 0, 0.2)">
     <h5>Sign up to First Down</h5>
@@ -85,5 +106,5 @@
     </div>
 </footer>
 </body>
-<script src="teamgames.js">Perro</script>
+<script src="teamgames.js"></script>
 </html>
