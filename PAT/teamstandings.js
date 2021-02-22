@@ -1,7 +1,7 @@
 function getStandings(){
   var seasons= document.getElementsByName("temporadas")[0];
   var year=seasons.options[seasons.selectedIndex].value;
-var url = 'https://cors-anywhere.herokuapp.com/https://api.sportradar.us/nfl/official/trial/v6/en/seasons/'+year+'/standings.json?api_key=66a5rr227gqmvbmsquhxmsy6';
+var url = 'https://powerful-gorge-32436.herokuapp.com/https://api.sportradar.us/nfl/official/trial/v6/en/seasons/'+year+'/standings.json?api_key=66a5rr227gqmvbmsquhxmsy6';
 
 fetch(url, {
   method: 'GET',

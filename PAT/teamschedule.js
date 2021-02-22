@@ -3,8 +3,7 @@ function getSchedule(){
   var year=seasons.options[seasons.selectedIndex].value;
   var weeks= document.getElementsByName("semanas")[0];
   var week=weeks.options[weeks.selectedIndex].value;
-  console.log(week+" "+year);
-  var url = 'https://cors-anywhere.herokuapp.com/https://api.sportradar.us/nfl/official/trial/v6/en/games/'+year+'/REG/'+week+'/schedule.json?api_key=66a5rr227gqmvbmsquhxmsy6';
+  var url = 'https://powerful-gorge-32436.herokuapp.com/https://api.sportradar.us/nfl/official/trial/v6/en/games/'+year+'/REG/'+week+'/schedule.json?api_key=66a5rr227gqmvbmsquhxmsy6';
   
   fetch(url, {
     method: 'GET',
