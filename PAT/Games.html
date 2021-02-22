@@ -37,47 +37,58 @@
   </div>
 </nav>
 </header>
-<div class="container pt-3 d-flex ml-8">
-<div class="card d-inline-block mr-4" style="height: 25rem;">
-  <img class="card-img-top" src="https://e7n9s5t9.stackpathcdn.com/articles/wp-content/uploads/2019/07/buccaneers-vs-chiefs.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Bucs vs Chiefs</h5>
-    <p class="card-text">The Tampa Bay Buccaneers take on the Kansas City Chiefs in the LV superbowl</p>
-    <a href="https://youtube.com/watch?v=Gz5-NQROQGw&ab_channel=NFL" class="btn btn-primary">Watch Highlights</a>
+<div class="container" style="margin-left: 35%; margin-top: 4%;">
+  <div class="opciones d-inline-block" >
+      <label for="temporadas">Select season:</label>
+<select name="temporadas">
+  <option value="2020">2020-2021</option>
+  <option value="2019">2019-2020</option>
+  <option value="2019">2018-2019</option>
+  <option value="2017">2017-2018</option>
+  <option value="2016">2016-2017</option>
+  <option value="2015">2015-2016</option>
+  <option value="2014">2014-2015</option>
+  <option value="2013">2013-2014</option>
+  <option value="2012">2012-2013</option>
+  <option value="2011">2011-2012</option>
+  <option value="2010">2010-2011</option>
+  <option value="2009">2009-2010</option>
+  <option value="2008">2008-2009</option>
+  <option value="2007">2007-2008</option>
+  <option value="2006">2006-2007</option>
+  <option value="2005">2005-2006</option>
+  <option value="2004">2004-2005</option>
+  <option value="2003">2003-2004</option>
+  <option value="2002">2002-2003</option>
+  <option value="2001">2001-2002</option>
+  <option value="2000">2000-2001</option>
+</select>
   </div>
-</div>
-<div class="card d-inline-block mr-4" style="height: 25rem;">
-  <img class="card-img-top" src="https://e7n9s5t9.stackpathcdn.com/articles/wp-content/uploads/2019/07/chiefs-vs-bills.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Bills vs Chiefs</h5>
-    <p class="card-text">The Bills need to beat the reigning champions to get to the superbowl </p>
-    <a href="https://www.youtube.com/watch?v=_FojDFDN99U&ab_channel=NFL" class="btn btn-primary">Watch Highlights</a>
-  </div>
-  </div>
- <div class="card d-inline-block mr-4" style="height: 25rem;">
-  <img class="card-img-top" src="https://e7n9s5t9.stackpathcdn.com/articles/wp-content/uploads/2019/07/buccaneers-vs-packers.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Bucs vs Packers</h5>
-    <p class="card-text">Brady and Rodgers meet in this high intensity matchup between HOF QBs                     </p>
-    <a href="https://www.youtube.com/watch?v=Gt6NsqMbByo&ab_channel=NFL" class="btn btn-primary">Watch Highlights</a>
-  </div> 
-</div>
- <div class="card d-inline-block mr-4" style="height: 25rem;">
-  <img class="card-img-top" src="https://e7n9s5t9.stackpathcdn.com/articles/wp-content/uploads/2019/07/chiefs-vs-browns.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Browns vs Chiefs </h5>
-    <p class="card-text">Browns looking to keep their dream alive after their big Wildcard win           </p>
-    <a href="https://www.youtube.com/watch?v=c5CPyLlSWQ8&ab_channel=NFL" class="btn btn-primary">Watch Highlights</a>
-  </div> 
-</div>
-  <div class="card d-inline-block " style=" height:25remm;">
-    <img class="card-img-top" src="https://e7n9s5t9.stackpathcdn.com/articles/wp-content/uploads/2019/07/rams-vs-packers.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Rams vs Packers </h5>
-      <p class="card-text ">Green Bay explosive attack faces the best ranked defense in the NFL </p>
-      <a href="https://www.youtube.com/watch?v=mp0c8xkCacM&ab_channel=NFL" class="btn btn-primary">Watch Highlights</a>
+  <div class="opciones d-inline-block" >
+      <label for="semanas">Select week:</label>
+<select name="semanas">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+</select>
     </div>
-  </div>
+  <button type="button" class="btn btn-dark d-inline-block ml-3" onclick="getSchedule()">Update Schedule</button>
+</div>
+<div id="games" class="container-fluid mt-3 ml-8">
 </div>
 <footer class="text-center text-lg-start mt-5" style="background-color: rgba(0, 0, 0, 0.2)">
   <h5>Sign up to First Down</h5>
@@ -100,5 +111,5 @@
   </div>
 </footer>
 </body>
-<script src="teamgames.js"></script>
+<script src="teamschedule.js"></script>
 <html>
